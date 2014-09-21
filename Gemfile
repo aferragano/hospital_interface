@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.0.0'
 
 # PostgreSQL driver
 gem 'pg'
@@ -14,7 +14,7 @@ gem 'activerecord', '~>4.1'
 gem 'rake'
 
 gem 'shotgun'
-
+gem 'bcrypt'
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
