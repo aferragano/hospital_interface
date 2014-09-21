@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- 
+  <!--
     normalize.css removes cross-browser differences in defaults, e.g.,
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
@@ -17,10 +17,9 @@
 
   <title>St. Vincents Hospital</title>
   <header>
+    <h1><a href="/">St. Vincents Hospital</a></h1>
     <div>
-      <a href="/">link</a>
-    </div>
-    <nav>
+      <nav>
       <ul>
         <% if session[:doctor_id] %>
           <li><a href="/record/new">make record</a></li>
@@ -31,6 +30,9 @@
         <% end %>
       </ul>
     </nav>
+
+    </div>
+
   </header>
 
   <div>
