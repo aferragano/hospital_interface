@@ -5,7 +5,7 @@ end
 
 post '/login' do
 	doctor = Doctor.authenticate(params[:doctor])
-	session[:doctor_id] = doctor.doctor_id
+	session[:doctor_id] = doctor.id
 	redirect '/'
 end
 
