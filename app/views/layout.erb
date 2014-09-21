@@ -15,9 +15,26 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
-  <title></title>
-</head>
-<body>
-  <%= yield %>
+  <title>St. Vincents Hospital</title>
+  <header>
+    <div>
+      <a href="/">link</a>
+    </div>
+    <nav>
+      <ul>
+        <% if session[:doctor_id] %>
+          <li><a href="/record/new">make record</a></li>
+          <li><a href="/logout">log out</a></li>
+        <% else %>
+          <li><a href="/login">login</a></li>
+          <li><a href="/signup">new employee access</a></li>
+        <% end %>
+      </ul>
+    </nav>
+  </header>
+
+  <div>
+    <%= yield %>
+  </div>
 </body>
 </html>
