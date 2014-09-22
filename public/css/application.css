@@ -1,38 +1,47 @@
 body {
-  height: 100%;
-  width: 100%;
-  background-color: #7287ff;
+  height: 80%;
+  width: 80%;
+  background-color: #DAE8E6;
+  margin-left: auto;
+  margin-right: auto;
+
 }
+
 header {
   float: inline;
   color: white;
-  background-color: #7287ff;
+  background-color: #FF4C4C;
   width: 100%;
   height: 60px;
   top: 10px;
   line-height: 60px;
-  padding: 10px;
+  padding: 20px;
   color:#EBFFFF;
 
 }
+
 ul {
   list-style: none;
 }
-
-
 
 nav {
   float: right;
   font-size: 1.1em;
   font-family: sans-serif;
-  margin-right: 15px;
-  background-color: #BEC8FF;
-  padding: 10px ;
+  margin-right: 30px;
+  background-color: #FF4C4C;
+  padding: 2px ;
+
 }
+
 nav a {
-  line-height: 60px;
+
   padding: 2px;
-  color:#EBFFFF;
+  color:#FF4C4C;
+}
+
+a {
+  text-decoration: none;
 }
 
 .login {
@@ -40,13 +49,35 @@ nav a {
   background: white;
   display: block;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   width: 50%;
   margin: 0 auto;
 }
+
 nav li {
   display: inline-block;
 }
+
 a:visited {
     color: white;
+}
+.form {
+  margin: 25px;
+  padding: 25px;
+  font-size: 1.4em;
+}
+
+textarea {
+
+  margin: 25px;
+  padding: 10px;
+}
+
+.display_record {
+  font-size: 1.3em;
+  margin: 25px;
+  padding: 10px;
+}
+.content {
+  padding: 20px;
 }

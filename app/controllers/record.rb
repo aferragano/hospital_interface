@@ -13,10 +13,12 @@ get '/record/new' do
 end
 
 post '/record/new' do
-  doctor = doctor.find(session[:doctor_id])
-  record = doctor.records.create(record_title: params[:record_title])
+  # doctor = doctor.find(session[:doctor_id])
+  Record.create(title: params[:title], text: params[:text])
 
-  redirect :"record/display/#{rcord.id}"
+  # erb :'/record/new'
+
+  redirect :'/record/display'
 end
 
 get '/record/:id/edit' do
@@ -26,7 +28,7 @@ end
 
 put '/record/:id/edit' do
   record = Record.find(params[:id])
-  record.update(record_title: params[:record_title])
+  record.update(title: params[:title])
   redirect :"record/display/#{record.id}"
 end
 

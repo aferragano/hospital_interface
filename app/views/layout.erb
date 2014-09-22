@@ -7,32 +7,24 @@
     See: http://necolas.github.com/normalize.css/
   -->
   <link rel="stylesheet" href="/css/normalize.css">
-  <!--
-    application.css is where you put your styles
-  -->
   <link rel="stylesheet" href="/css/application.css">
-
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
-
-  <title>St. Vincents Hospital</title>
+<!--   <body class= -->
+  <title></title>
   <header>
     <h1><a href="/">St. Vincents Hospital</a></h1>
-    <div>
       <nav>
       <ul>
         <% if session[:doctor_id] %>
-          <li><a href="/record/new">make record</a></li>
-          <li><a href="/logout">log out</a></li>
+          <li><a href="/record/new">make record     </a></li>
+          <li><a href="/logout">log out             </a></li>
         <% else %>
-          <li><a href="/login">login</a></li>
-          <li><a href="/signup">new employee access</a></li>
+          <li><a href="/login">login           </a></li>
+          <li><a href="/signup">new employee access   </a></li>
         <% end %>
       </ul>
     </nav>
-
-    </div>
-
   </header>
 
   <div>

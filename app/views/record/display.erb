@@ -1,10 +1,9 @@
 <!-- display.erb -->
 
 <div class="display_record">
-  <% @record.each do |r| %>
-    <%= r.title %>
+  <% @record.each do |record| %>
+    <h3><%=record.title %></h3>
     <br>
-    <%= r.text %>
-    <% end%>
+    <div class="content"><%=record.text %></div>
+    <% end %>
   </div>
-lalalaa
