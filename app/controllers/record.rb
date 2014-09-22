@@ -15,7 +15,7 @@ end
 post '/record/new' do
   doctor = doctor.find(session[:doctor_id])
   record = doctor.records.create(record_title: params[:record_title])
-  
+
   redirect :"record/display/#{rcord.id}"
 end
 
@@ -32,5 +32,9 @@ end
 
 delete "/record/:id" do
   Record.find(params[:id]).destroy
-  redirect "/"  
+  redirect "/"
+end
+
+get '/record/display' do
+  @record = Record.all
 end

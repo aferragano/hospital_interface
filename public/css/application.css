@@ -1,0 +1,52 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #7287ff;
+}
+header {
+  float: inline;
+  color: white;
+  background-color: #7287ff;
+  width: 100%;
+  height: 60px;
+  top: 10px;
+  line-height: 60px;
+  padding: 10px;
+  color:#EBFFFF;
+
+}
+ul {
+  list-style: none;
+}
+
+
+
+nav {
+  float: right;
+  font-size: 1.1em;
+  font-family: sans-serif;
+  margin-right: 15px;
+  background-color: #BEC8FF;
+  padding: 10px ;
+}
+nav a {
+  line-height: 60px;
+  padding: 2px;
+  color:#EBFFFF;
+}
+
+.login {
+  font-family: sans-serif;
+  background: white;
+  display: block;
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+nav li {
+  display: inline-block;
+}
+a:visited {
+    color: white;
+}

@@ -1,15 +1,15 @@
 # login.rb
-get '/login' do 
+get '/login' do
 	erb :'login/login'
 end
 
-post 'login' do
-	doctor = Doctor.suthenticate(params[:doctor])
-	session[:doctor_id] = doctor.doctor_id
+post '/login' do
+	doctor = Doctor.authenticate(params[:doctor])
+	session[:doctor_id] = doctor.id
 	redirect '/'
 end
 
-get 'logout' do 
+get '/logout' do
 	session.clear
 	redirect '/'
 end
@@ -20,6 +20,6 @@ end
 
 post '/signup' do
 	doctor = Doctor.create(params[:doctor])
-	session[:doctor_id] = doctor.id 
+	session[:doctor_id] = doctor.id
 	redirect '/'
 end
